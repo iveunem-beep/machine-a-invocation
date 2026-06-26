@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine a invocation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="machine">
+            <h1>Machine à Invocation</h1>
+
+            <form id="invocation">
+                <label for="prenom">Ton prénom</label>
+                <input id="prenom" name="prenom" type="text" placeholder="Ex : David" required/>
+
+                <label for="creature">Choisis ton monstre</label>
+                <select id="creature" name="creature"required>
+                    <option value="le Chat-Octo">🐙 le Chat-Octo</option>
+                    <option value="le Dragon-Debug">🐉 le Dragon-Debug</option>
+                    <option value="la Licorne-CSS">🦄 la Licorne-CSS</option>
+                    <option value="le Renard-Refacto">🦊 le Renard-Refacto</option>
+                </select>
+
+                <button type="submit" class="btn">Invocation</button>
+            </form>
+        </section>
+        <section id="resultat" class="resultat cache">
+            <p id="message"></p>
+            <button id="recommencer" class="btn secondaire">Apparition du monstre</button>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+    
+</body>
+</html>
